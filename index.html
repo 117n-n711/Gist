@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App for Gist</title>
+    <script type="text/javascript" src="./js/require.js"></script>
+    <script type="text/javascript" src="./js/config.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+        a:hover{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body class="all-content">
+<script type="text/javascript">
+    require(["gistrouter", "backbone"], function(GistRouter, Backbone){
+        var nr  = new GistRouter();
+        Backbone.history.start();
+        window.GistRouter = nr;
+    });
+</script>
+</body>
+</html>
