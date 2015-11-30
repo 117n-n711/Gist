@@ -8,7 +8,7 @@ define([
     GistModel
 ){
     return Backbone.Collection.extend({
-        url: "https://api.github.com/users/117n-n711/gists",
+        url: "https://api.github.com/users/117n-n711/gists",//url
         model: GistModel,
         initialize: function(options){
 
